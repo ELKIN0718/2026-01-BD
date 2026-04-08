@@ -7,7 +7,7 @@ HAVING COUNT(DISTINCT o.employeeid) = (
     SELECT COUNT(*)
     FROM employees
 );
-SELECT c.companyname
+SELECT c.contactname
 FROM customers c
 JOIN orders o ON c.customerid = o.customerid
 JOIN orderdetails od ON o.orderid = od.orderid
